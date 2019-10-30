@@ -1,0 +1,25 @@
+<!--div *ngIf="bird"-->
+  <h2>{{ bird.name | uppercase }} Details</h2>  
+  <div>
+    <span>id: </span>{{bird.id}}
+  </div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="bird.name" placeholder="name">
+    </label>
+  </div>
+  <div>
+    <label>es:
+      <input [(ngModel)]="bird.es.name" placeholder="es">
+    </label>
+    <label>en:
+      <input [(ngModel)]="bird.en.name" placeholder="en">
+    </label>
+    <label>ca:
+      <input [(ngModel)]="bird.ca.name" placeholder="ca">
+    </label>
+  </div>
+  <button (click)="goBack()">go back</button>
+  <button (click)="save()">save</button>
+<!-- /div -->
+
